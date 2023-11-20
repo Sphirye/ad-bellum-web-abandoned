@@ -1,11 +1,12 @@
 <template>
-  <v-container>
+  <v-container fluid>
 		<v-row dense>
-
 			<v-col cols="12">
-        <CarouselComponent/>
+        <CarouselComponent height="400px"/>
 			</v-col>
+		</v-row>
 
+    <v-row dense class="px-16">
       <v-col cols="4">
         <EventsComponent/>
       </v-col>
@@ -63,8 +64,7 @@
           </v-card>
         </v-sheet>
       </v-col>
-
-		</v-row>
+    </v-row>
 	</v-container>
 </template>
 
