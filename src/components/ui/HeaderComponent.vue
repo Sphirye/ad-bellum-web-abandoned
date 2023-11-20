@@ -2,7 +2,7 @@
 	<v-app-bar color="grey darken-4" dark app clipped-left flat>
     <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
 
-		<div class="pointer ml-2">
+		<div class="custom-borderline pointer ml-2">
       <AdBellumLogo @click="$router.push('/').catch(err => {})"/>
     </div>
 
