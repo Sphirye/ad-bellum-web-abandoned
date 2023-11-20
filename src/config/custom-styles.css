@@ -38,8 +38,44 @@
 
 /* TEXT */
 
+@font-face {
+    font-family: 'Blackmoor Std';
+    src: url("../assets/fonts/BlackmoorStdRegular.otf") format("opentype");
+}
+
 * {
     font-family: 'Work Sans', sans-serif;
+}
+
+.blackmoor-text {
+    font-family: 'Blackmoor Std', 'Work Sans', sans-serif;
+}
+
+.text-15 {
+    font-size: 15px !important;
+    line-height: 20px !important;
+}
+
+.text-20 {
+    font-size: 20px !important;
+    line-height: 25px !important;
+}
+
+
+.text-25 {
+    font-size: 25px !important;
+    line-height: 30px !important;
+}
+
+
+.text-30 {
+    font-size: 30px !important;
+    line-height: 35px !important;
+}
+
+.text-35 {
+    font-size: 35px !important;
+    line-height: 40px !important;
 }
 
 /*  RANDOM  */
