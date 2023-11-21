@@ -1,6 +1,5 @@
 <template>
-	<v-app-bar color="grey darken-4" dark app clipped-left flat>
-    <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
+	<v-app-bar color="grey darken-4" dark app clipped-left flat extended>
 
 		<div class="custom-borderline pointer ml-2">
       <AdBellumLogo @click="$router.push('/').catch(err => {})"/>
@@ -8,10 +7,13 @@
 
 		<v-spacer/>
 
-		<v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
-			<span class="mr-2">Latest Release</span>
-			<v-icon>mdi-open-in-new</v-icon>
+		<v-btn icon>
+			<v-icon>mdi-magnify</v-icon>
 		</v-btn>
+
+    <template v-slot:extension>
+      <SubheaderComponent/>
+    </template>
 
 	</v-app-bar>
 </template>
@@ -22,9 +24,10 @@ import {getModule} from "vuex-module-decorators"
 import LangModule from "@/store/LangModule"
 import DrawerModule from "@/store/DrawerModule";
 import AdBellumLogo from "@/components/AdBellumLogo.vue";
+import SubheaderComponent from "@/components/ui/SubheaderComponent.vue";
 
 @Component({
-  components: {AdBellumLogo}
+  components: {SubheaderComponent, AdBellumLogo}
 })
 export default class HeaderComponent extends Vue {
 	lang = getModule(LangModule).lang
