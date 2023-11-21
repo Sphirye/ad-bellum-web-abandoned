@@ -7,9 +7,8 @@
 
 		<v-spacer/>
 
-		<v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
-			<span class="mr-2">Latest Release</span>
-			<v-icon>mdi-open-in-new</v-icon>
+		<v-btn icon>
+			<v-icon>mdi-magnify</v-icon>
 		</v-btn>
 
     <template v-slot:extension>
