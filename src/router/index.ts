@@ -5,9 +5,9 @@ Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
   { path: '/', name: 'Inicio', component: () => import('../views/HomeView.vue') },
-  { path: '/combats', name: 'Combates', component: () => import('../views/HomeView.vue') },
-  { path: '/events', name: 'Eventos', component: () => import('../views/HomeView.vue') },
-  { path: '/galery', name: 'Galería', component: () => import('../views/HomeView.vue') },
+  { path: '/combats', name: 'Combates', component: () => import('../views/CombatsView.vue') },
+  { path: '/events', name: 'Eventos', component: () => import('../views/EventsView.vue') },
+  { path: '/galery', name: 'Galería', component: () => import('../views/GaleryView.vue') },
   { path: '/about', name: 'Acerca de', component: () => import('../views/AboutView.vue') },
   { path: '*', redirect: '/' },
 ]
