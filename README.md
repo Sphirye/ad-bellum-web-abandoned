@@ -3,7 +3,9 @@
 ## Project setup
 ```
 npm install
+
 ```
+![imagen](https://github.com/user-attachments/assets/9989e30c-8a0e-46d8-9a94-7e301c075e06)
 
 ### Compiles and hot-reloads for development
 ```
